@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightpink;
+        }
+
+        header {
+            background-color: aquamarine;
+            color: black;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .product-details {
+            display: flex;
+            padding: 20px;
+        }
+
+        .product-image {
+            flex: 1;
+            ;
+        }
+
+        .product-info {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .product-info h2 {
+            color: #333;
+        }
+
+        .product-info p {
+            margin-top: 10px;
+        }
+
+        .product-info .price {
+            display: block;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        #addToCartBtn {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        #addToCartBtn:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clothing Store</h1>
+    </header>
+
+    <section class="product-details">
+        <div class="product-image">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FTshirt-Double-Meaning-Unisex-T-Shirt%2Fdp%2FB092P9CCDW&psig=AOvVaw3MrkzGEwdy5ZVr2Am5t7FD&ust=1700233486568000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNib3rnlyIIDFQAAAAAdAAAAABAI" alt="T-shirt">
+        </div>
+        <div class="product-info">
+            <h2>T-shirt</h2>
+            <p>Comfortable cotton T-shirt for everyday wear.</p>
+            <span class="price">$20</span>
+            <button id="addToCartBtn">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Clothing Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

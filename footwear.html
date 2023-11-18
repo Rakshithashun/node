@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightpink;
+        }
+
+        header {
+            background-color: aquamarine;
+            color: black;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .product-details {
+            display: flex;
+            padding: 20px;
+        }
+
+        .product-image {
+            flex: 1;
+        }
+
+        .product-info {
+            flex: 1;
+            
+        }
+
+        .product-info h2 {
+            color: #333;
+        }
+
+        .product-info p {
+            margin-top: 10px;
+        }
+
+        .product-info .price {
+            display: block;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        #addToCartBtn {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        #addToCartBtn:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Footwear Store</h1>
+    </header>
+
+    <section class="product-details">
+        <div class="product-image">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flipkart.com%2Faadi-synthetic-leather-lightweight-comfort-summer-trendy-walking-outdoor-daily-use-sneakers-men%2Fp%2Fitma442bf9226209%3Fpid%3DSHOGDZZESTTE3ZUY%26lid%3DLSTSHOGDZZESTTE3ZUY3QPNXC%26marketplace%3DFLIPKART%26store%3Dosp%252Fcil%252Fe1f%26srno%3Db_1_3%26otracker%3Dnmenu_sub_Men_0_Casual%2520Shoes%26fm%3Dorganic%26iid%3Dbc844510-e076-4b95-9f83-f2c33973a14d.SHOGDZZESTTE3ZUY.SEARCH%26ppt%3DNone%26ppn%3DNone%26ssid%3Dsf1gvbohn40000001696661429064&psig=AOvVaw0pXvH6modMTTLy0oVL_tGP&ust=1700233399427000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNiXipDlyIIDFQAAAAAdAAAAABAE" alt="shoe">
+        </div>
+        <div class="product-info">
+            <h2>Shoe</h2>
+            <p>Comfortable shoes for everyday wear.</p>
+            <span class="price">$50</span>
+            <button id="addToCartBtn">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Clothing Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
